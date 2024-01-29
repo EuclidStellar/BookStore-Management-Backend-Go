@@ -14,7 +14,7 @@ import (
 var db *gorm.DB
 
 
-func connect (){
+func Connect (){
 	d , err := gorm.Open("mysql" , "gaurav : gaurav@/bookstore?charset=utf8&parseTime=True&loc=Local") 
 	if err != nil {
 		panic(err)
